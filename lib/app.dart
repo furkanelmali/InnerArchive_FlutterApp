@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'core/theme/app_theme.dart';
 import 'core/theme/app_colors.dart';
+import 'features/auth/providers/auth_provider.dart';
+import 'features/auth/screens/auth_screen.dart';
 import 'features/media/screens/home_screen.dart';
 import 'features/media/screens/statistics_screen.dart';
 import 'features/media/screens/profile_screen.dart';
@@ -14,8 +17,28 @@ class InnerArchiveApp extends StatelessWidget {
       title: 'Inner Archive',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.dark,
-      home: const AppShell(),
+      home: const AuthGate(),
     );
+  }
+}
+
+class AuthGate extends ConsumerWidget {
+  const AuthGate({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final auth = ref.watch(authProvider);
+
+    switch (auth.status) {
+      case AuthStatus.unknown:
+        return const Scaffold(
+          body: Center(child: CircularProgressIndicator()),
+        );
+      case AuthStatus.unauthenticated:
+        return const AuthScreen();
+      case AuthStatus.authenticated:
+        return const AppShell();
+    }
   }
 }
 
