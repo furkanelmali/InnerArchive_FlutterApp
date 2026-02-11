@@ -1,0 +1,57 @@
+Running `(cd /Users/furkanelmali/.pub-cache/hosted/pub.dev/objective_c-9.3.0/; ANDROID_HOME=/Users/furkanelmali/Library/Android/sdk TMPDIR=/var/folders/bz/wn4bhz1n2219pl_mjj_kvwym0000gn/T/ PATH=/Applications/Xcode.app/Contents/SharedFrameworks/SwiftBuild.framework/Versions/A/PlugIns/SWBBuildService.bundle/Contents/PlugIns/SWBUniversalPlatformPlugin.bundle/Contents/Frameworks/SWBUniversalPlatform.framework/Resources:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/opt/homebrew/opt/ruby/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin HOME=/Users/furkanelmali /opt/homebrew/share/flutter/bin/cache/dart-sdk/bin/dart --packages=/Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/package_config.json /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/objective_c/9f22e6a04e7d57ddc53af6565b2f38d4/hook.dill --config=/Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/objective_c/9f22e6a04e7d57ddc53af6565b2f38d4/input.json )`.
+INFO: 2026-02-12 00:42:09.217441: Running `/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang --version`.
+
+INFO: 2026-02-12 00:42:09.231928: Running `/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang --version`.
+
+INFO: 2026-02-12 00:42:09.243533: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.2.sdk -target arm64-apple-ios-simulator -mios-version-min=12 -c /Users/furkanelmali/.pub-cache/hosted/pub.dev/objective_c-9.3.0/src/include/dart_api_dl.c -fpic -I src -o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/9f22e6a04e/obj/src/include/dart_api_dl.c.o
+
+INFO: 2026-02-12 00:42:09.243813: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.2.sdk -target arm64-apple-ios-simulator -mios-version-min=12 -c /Users/furkanelmali/.pub-cache/hosted/pub.dev/objective_c-9.3.0/src/objective_c.c -fpic -I src -o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/9f22e6a04e/obj/src/objective_c.c.o
+
+f22e6a04e/obj/src/input_stream_adapter.m.o
+
+INFO: 2026-02-12 00:42:09.244132: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.2.sdk -target arm64-apple-ios-simulator -mios-version-min=12 -x objective-c -fobjc-arc -c /Users/furkanelmali/.pub-cache/hosted/pub.dev/objective_c-9.3.0/src/observer.m -fpic -I src -o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/9f22e6a04e/obj/src/observer.m.o
+
+.m.o
+
+INFO: 2026-02-12 00:42:09.244608: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.2.sdk -target arm64-apple-ios-simulator -mios-version-min=12 -x objective-c -fobjc-arc -c /Users/furkanelmali/.pub-cache/hosted/pub.dev/objective_c-9.3.0/src/objective_c_bindings_generated.m -fpic -I src -o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/9f22e6a04e/obj/src/objective_c_bindings_generated.m.o
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.2.sdk -target arm64-apple-ios-simulator -mios-version-min=12 -x objective-c -fobjc-arc -c /Users/furkanelmali/.pub-cache/hosted/pub.dev/objective_c-9.3.0/src/protocol.m -fpic -I src -o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/9f22e6a04e/obj/src/protocol.m.o
+
+INFO: 2026-02-12 00:42:09.367214: 
+INFO: 2026-02-12 00:42:09.367396: 
+INFO: 2026-02-12 00:42:09.367451: Generated /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/9f22e6a04e/obj/src/objective_c.c.o
+INFO: 2026-02-12 00:42:09.367659: 
+INFO: 2026-02-12 00:42:09.367686: 
+INFO: 2026-02-12 00:42:09.367705: Generated /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/9f22e6a04e/obj/src/include/dart_api_dl.c.o
+
+INFO: 2026-02-12 00:42:09.369726: 
+INFO: 2026-02-12 00:42:09.369787: 
+INFO: 2026-02-12 00:42:09.369800: Generated /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/9f22e6a04e/obj/src/observer.m.o
+
+INFO: 2026-02-12 00:42:09.372307: 
+INFO: 2026-02-12 00:42:09.372368: 
+INFO: 2026-02-12 00:42:09.372388: Generated /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/9f22e6a04e/obj/src/protocol.m.o
+
+INFO: 2026-02-12 00:42:09.475843: 
+INFO: 2026-02-12 00:42:09.475884: 
+INFO: 2026-02-12 00:42:09.475896: Generated /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/9f22e6a04e/obj/src/ns_number.m.o
+
+INFO: 2026-02-12 00:42:09.483726: 
+INFO: 2026-02-12 00:42:09.483759: 
+INFO: 2026-02-12 00:42:09.483769: Generated /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/9f22e6a04e/obj/src/objective_c.m.o
+
+INFO: 2026-02-12 00:42:09.485361: 
+INFO: 2026-02-12 00:42:09.485378: 
+INFO: 2026-02-12 00:42:09.485387: Generated /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/9f22e6a04e/obj/src/input_stream_adapter.m.o
+
+INFO: 2026-02-12 00:42:09.496102: 
+INFO: 2026-02-12 00:42:09.496141: 
+INFO: 2026-02-12 00:42:09.496151: Generated /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/9f22e6a04e/obj/src/objective_c_bindings_generated.m.o
+
+INFO: 2026-02-12 00:42:09.496441: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -shared -Wl,-encryptable -undefined dynamic_lookup -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.2.sdk -target arm64-apple-ios-simulator -mios-version-min=12 /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/9f22e6a04e/obj/src/include/dart_api_dl.c.o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/9f22e6a04e/obj/src/objective_c.c.o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/9f22e6a04e/obj/src/input_stream_adapter.m.o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/9f22e6a04e/obj/src/objective_c.m.o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/9f22e6a04e/obj/src/observer.m.o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/9f22e6a04e/obj/src/ns_number.m.o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/9f22e6a04e/obj/src/protocol.m.o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/9f22e6a04e/obj/src/objective_c_bindings_generated.m.o -o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/9f22e6a04e/objective_c.dylib
+
+INFO: 2026-02-12 00:42:09.529130: 
+INFO: 2026-02-12 00:42:09.529189: ld: warning: -undefined dynamic_lookup is deprecated on iOS-simulator
+
+INFO: 2026-02-12 00:42:09.529200: Generated /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/9f22e6a04e/objective_c.dylib
+

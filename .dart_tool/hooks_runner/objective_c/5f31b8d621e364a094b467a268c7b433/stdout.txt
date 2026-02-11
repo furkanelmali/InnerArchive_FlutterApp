@@ -1,0 +1,61 @@
+Running `(cd /Users/furkanelmali/.pub-cache/hosted/pub.dev/objective_c-9.3.0/; TMPDIR=/var/folders/bz/wn4bhz1n2219pl_mjj_kvwym0000gn/T/ PATH=/opt/homebrew/opt/ruby/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/opt/ruby/bin HOME=/Users/furkanelmali /opt/homebrew/share/flutter/bin/cache/dart-sdk/bin/dart --packages=/Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/package_config.json /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/objective_c/5f31b8d621e364a094b467a268c7b433/hook.dill --config=/Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/objective_c/5f31b8d621e364a094b467a268c7b433/input.json )`.
+INFO: 2026-02-11 23:44:15.672750: Running `/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang --version`.
+
+INFO: 2026-02-11 23:44:15.687363: Running `/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang --version`.
+
+INFO: 2026-02-11 23:44:15.698140: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target x86_64-apple-darwin -mmacos-version-min=13 -c /Users/furkanelmali/.pub-cache/hosted/pub.dev/objective_c-9.3.0/src/include/dart_api_dl.c -fpic -I src -o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/5f31b8d621/obj/src/include/dart_api_dl.c.o
+
+INFO: 2026-02-11 23:44:15.698440: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target x86_64-apple-darwin -mmacos-version-min=13 -c /Users/furkanelmali/.pub-cache/hosted/pub.dev/objective_c-9.3.0/src/objective_c.c -fpic -I src -o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/5f31b8d621/obj/src/objective_c.c.o
+
+INFO: 2026-02-11 23:44:15.698607: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target x86_64-apple-darwin -mmacos-version-min=13 -c /Users/furkanelmali/.pub-cache/hosted/pub.dev/objective_c-9.3.0/test/util.c -fpic -I src -o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/5f31b8d621/obj/test/util.c.o
+
+INFO: 2026-02-11 23:44:15.698700: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target x86_64-apple-darwin -mmacos-version-min=13 -x objective-c -fobjc-arc -c /Users/furkanelmali/.pub-cache/hosted/pub.dev/objective_c-9.3.0/src/input_stream_adapter.m -fpic -I src -o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/5f31b8d621/obj/src/input_stream_adapter.m.o
+
+INFO: 2026-02-11 23:44:15.698860: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target x86_64-apple-darwin -mmacos-version-min=13 -x objective-c -fobjc-arc -c /Users/furkanelmali/.pub-cache/hosted/pub.dev/objective_c-9.3.0/src/observer.m -fpic -I src -o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/5f31b8d621/obj/src/observer.m.o
+
+INFO: 2026-02-11 23:44:15.698783: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target x86_64-apple-darwin -mmacos-version-min=13 -x objective-c -fobjc-arc -c /Users/furkanelmali/.pub-cache/hosted/pub.dev/objective_c-9.3.0/src/objective_c.m -fpic -I src -o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/5f31b8d621/obj/src/objective_c.m.o
+
+INFO: 2026-02-11 23:44:15.698946: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target x86_64-apple-darwin -mmacos-version-min=13 -x objective-c -fobjc-arc -c /Users/furkanelmali/.pub-cache/hosted/pub.dev/objective_c-9.3.0/src/ns_number.m -fpic -I src -o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/5f31b8d621/obj/src/ns_number.m.o
+
+INFO: 2026-02-11 23:44:15.699027: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target x86_64-apple-darwin -mmacos-version-min=13 -x objective-c -fobjc-arc -c /Users/furkanelmali/.pub-cache/hosted/pub.dev/objective_c-9.3.0/src/protocol.m -fpic -I src -o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/5f31b8d621/obj/src/protocol.m.o
+
+INFO: 2026-02-11 23:44:15.699181: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target x86_64-apple-darwin -mmacos-version-min=13 -x objective-c -fobjc-arc -c /Users/furkanelmali/.pub-cache/hosted/pub.dev/objective_c-9.3.0/src/objective_c_bindings_generated.m -fpic -I src -o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/5f31b8d621/obj/src/objective_c_bindings_generated.m.o
+
+INFO: 2026-02-11 23:44:15.738277: Generated /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/5f31b8d621/obj/test/util.c.o
+
+l/hooks_runner/shared/objective_c/build/5f31b8d621/obj/src/objective_c.c.o
+INFO: 2026-02-11 23:44:15.738158: 
+INFO: 2026-02-11 23:44:15.738173: 
+INFO: 2026-02-11 23:44:15.738182: Generated /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/5f31b8d621/obj/src/include/dart_api_dl.c.o
+INFO: 2026-02-11 23:44:15.738260: 
+INFO: 2026-02-11 23:44:15.738269: 
+
+INFO: 2026-02-11 23:44:15.755942: 
+INFO: 2026-02-11 23:44:15.756018: 
+INFO: 2026-02-11 23:44:15.756044: Generated /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/5f31b8d621/obj/src/protocol.m.o
+INFO: 2026-02-11 23:44:15.756147: 
+INFO: 2026-02-11 23:44:15.756168: 
+INFO: 2026-02-11 23:44:15.756184: Generated /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/5f31b8d621/obj/src/observer.m.o
+
+INFO: 2026-02-11 23:44:15.880447: 
+INFO: 2026-02-11 23:44:15.880492: 
+INFO: 2026-02-11 23:44:15.880503: Generated /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/5f31b8d621/obj/src/ns_number.m.o
+
+INFO: 2026-02-11 23:44:15.883206: 
+INFO: 2026-02-11 23:44:15.883228: 
+INFO: 2026-02-11 23:44:15.883236: Generated /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/5f31b8d621/obj/src/input_stream_adapter.m.o
+
+INFO: 2026-02-11 23:44:15.885164: 
+INFO: 2026-02-11 23:44:15.885184: 
+INFO: 2026-02-11 23:44:15.885194: Generated /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/5f31b8d621/obj/src/objective_c.m.o
+
+INFO: 2026-02-11 23:44:15.898297: 
+INFO: 2026-02-11 23:44:15.898315: 
+INFO: 2026-02-11 23:44:15.898323: Generated /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/5f31b8d621/obj/src/objective_c_bindings_generated.m.o
+
+INFO: 2026-02-11 23:44:15.898612: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -shared -Wl,-encryptable -undefined dynamic_lookup -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target x86_64-apple-darwin -mmacos-version-min=13 /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/5f31b8d621/obj/src/include/dart_api_dl.c.o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/5f31b8d621/obj/src/objective_c.c.o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/5f31b8d621/obj/test/util.c.o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/5f31b8d621/obj/src/input_stream_adapter.m.o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/5f31b8d621/obj/src/objective_c.m.o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/5f31b8d621/obj/src/observer.m.o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/5f31b8d621/obj/src/ns_number.m.o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/5f31b8d621/obj/src/protocol.m.o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/5f31b8d621/obj/src/objective_c_bindings_generated.m.o -o /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/5f31b8d621/objective_c.dylib
+
+INFO: 2026-02-11 23:44:15.926879: 
+INFO: 2026-02-11 23:44:15.926917: 
+INFO: 2026-02-11 23:44:15.926928: Generated /Users/furkanelmali/Documents/GitHub/InnerArchive_FlutterApp/.dart_tool/hooks_runner/shared/objective_c/build/5f31b8d621/objective_c.dylib
+
