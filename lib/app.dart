@@ -30,9 +30,9 @@ class AuthGate extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final auth = ref.watch(authProvider);
+    final authState = ref.watch(authProvider);
 
-    switch (auth.status) {
+    switch (authState.status) {
       case AuthStatus.unknown:
         return const Scaffold(
           body: Center(child: CircularProgressIndicator()),

@@ -45,7 +45,7 @@ class _ProfileSetupScreenState extends ConsumerState<ProfileSetupScreen> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final auth = ref.watch(authProvider);
+    final authState = ref.watch(authProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Complete Profile')),
@@ -94,10 +94,10 @@ class _ProfileSetupScreenState extends ConsumerState<ProfileSetupScreen> {
                 ),
               ),
             ),
-            if (auth.error != null) ...[
+            if (authState.error != null) ...[
               const SizedBox(height: 24),
               Text(
-                auth.error!,
+                authState.error!,
                 style: const TextStyle(color: AppColors.error),
                 textAlign: TextAlign.center,
               ),
@@ -107,8 +107,8 @@ class _ProfileSetupScreenState extends ConsumerState<ProfileSetupScreen> {
               width: double.infinity,
               height: 50,
               child: ElevatedButton(
-                onPressed: auth.isLoading ? null : _submit,
-                child: auth.isLoading
+                onPressed: authState.isLoading ? null : _submit,
+                child: authState.isLoading
                     ? const CircularProgressIndicator()
                     : const Text('Complete Setup'),
               ),

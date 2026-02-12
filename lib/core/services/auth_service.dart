@@ -1,76 +1,45 @@
+import 'package:flutter/foundation.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'supabase_client.dart';
 
 class AuthService {
   SupabaseClient get _client => SupabaseClientProvider.client;
 
+  Stream<AuthState> get onAuthStateChanges => _client.auth.onAuthStateChange;
   User? get currentUser => _client.auth.currentUser;
-  bool get isAuthenticated => currentUser != null;
+  Session? get currentSession => _client.auth.currentSession;
 
-  Stream<AuthState> get authStateChanges => _client.auth.onAuthStateChange;
-
-  Future<AuthResponse> signUp({
-    required String email,
-    required String password,
-  }) async {
-    return _client.auth.signUp(email: email, password: password);
-  }
-
-  Future<AuthResponse> signIn({
+  Future<AuthResponse> signInWithEmailAndPassword({
     required String email,
     required String password,
   }) async {
     return _client.auth.signInWithPassword(email: email, password: password);
   }
 
-  Future<void> signOut() async {
-    await _client.auth.signOut();
+  Future<AuthResponse> signUpWithEmailAndPassword({
+    required String email,
+    required String password,
+  }) async {
+    return _client.auth.signUp(email: email, password: password);
   }
 
-  Future<AuthResponse> verifyEmailOtp({
-    required String email,
-    required String token,
-  }) async {
-    return _client.auth.verifyOTP(
-      token: token,
-      type: OtpType.signup,
-      email: email,
+  Future<void> signInWithGoogle() async {
+    // Web/Mobile seamless flow via browser.
+    // Handles deep linking via callback URL.
+    await _client.auth.signInWithOAuth(
+      OAuthProvider.google,
+      redirectTo: kIsWeb ? null : 'com.innerarchive.app://login-callback/',
     );
   }
 
-  Future<void> createProfile({
-    required String userId,
-    required String username,
-    required String fullName,
-    required DateTime? birthDate,
-  }) async {
-    await _client.from('profiles').insert({
-      'id': userId,
-      'username': username,
-      'full_name': fullName,
-      'birth_date': birthDate?.toIso8601String(),
-      'updated_at': DateTime.now().toIso8601String(),
-    });
+  Future<void> signInWithApple() async {
+    await _client.auth.signInWithOAuth(
+      OAuthProvider.apple,
+      redirectTo: kIsWeb ? null : 'com.innerarchive.app://login-callback/',
+    );
   }
 
-  Future<Map<String, dynamic>?> getProfile(String userId) async {
-    try {
-      final response = await _client
-          .from('profiles')
-          .select()
-          .eq('id', userId)
-          .maybeSingle();
-      return response;
-    } catch (_) {
-      return null;
-    }
-  }
-
-  Future<void> resendOtp(String email) async {
-    await _client.auth.resend(type: OtpType.signup, email: email);
-  }
-
-  Future<void> resetPassword(String email) async {
-    await _client.auth.resetPasswordForEmail(email);
+  Future<void> signOut() async {
+    await _client.auth.signOut();
   }
 }

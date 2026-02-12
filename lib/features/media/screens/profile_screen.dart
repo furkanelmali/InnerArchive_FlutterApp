@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:shimmer/shimmer.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 import '../../../core/enums/media_type.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../auth/providers/auth_provider.dart';
@@ -72,6 +73,10 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
     final allItems = itemsAsync.asData?.value ?? [];
     final theme = Theme.of(context);
 
+    // Get current user for provider info
+    final currentUser = Supabase.instance.client.auth.currentUser;
+    final provider = currentUser?.appMetadata['provider'] as String? ?? 'email';
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Profile'),
@@ -96,6 +101,8 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
               if (profile == null) return const SizedBox.shrink();
               return _IdentityCard(
                 profile: profile,
+                provider: provider,
+                email: currentUser?.email,
                 onAvatarTap: _pickAvatar,
                 onNameTap: () => _editField(
                   'Display Name',
@@ -163,12 +170,16 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
 
 class _IdentityCard extends StatelessWidget {
   final dynamic profile;
+  final String provider;
+  final String? email;
   final VoidCallback onAvatarTap;
   final VoidCallback onNameTap;
   final VoidCallback onBioTap;
 
   const _IdentityCard({
     required this.profile,
+    required this.provider,
+    this.email,
     required this.onAvatarTap,
     required this.onNameTap,
     required this.onBioTap,
@@ -249,11 +260,22 @@ class _IdentityCard extends StatelessWidget {
                     ],
                   ),
                 ),
-                const SizedBox(height: 2),
-                Text(
-                  '@${profile.username}',
-                  style: theme.textTheme.labelSmall
-                      ?.copyWith(color: AppColors.textTertiary),
+                Row(
+                  children: [
+                     Icon(
+                      provider == 'google' ? Icons.g_mobiledata 
+                      : provider == 'apple' ? Icons.apple 
+                      : Icons.email_outlined,
+                      size: 14,
+                      color: AppColors.textTertiary,
+                     ),
+                     const SizedBox(width: 4),
+                     Text(
+                        email ?? '@${profile.username}',
+                        style: theme.textTheme.labelSmall
+                            ?.copyWith(color: AppColors.textTertiary),
+                      ),
+                  ],
                 ),
                 GestureDetector(
                   onTap: onBioTap,

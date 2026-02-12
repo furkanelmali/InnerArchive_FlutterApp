@@ -17,13 +17,25 @@ class _VerificationScreenState extends ConsumerState<VerificationScreen> {
   void _verify() {
     final code = _codeController.text.trim();
     if (code.length != 6) return;
-    ref.read(authProvider.notifier).verifyOtp(code);
+    
+    // We need the email to verify. 
+    // It should be stored in the auth state after signUp.
+    final email = ref.read(authProvider).emailToVerify;
+    if (email == null) {
+      // Should not happen if flow is correct
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Email not found for verification')),
+      );
+      return;
+    }
+    
+    ref.read(authProvider.notifier).verifyOtp(email, code);
   }
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final auth = ref.watch(authProvider);
+    final authState = ref.watch(authProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Verify Email')),
@@ -33,7 +45,7 @@ class _VerificationScreenState extends ConsumerState<VerificationScreen> {
           children: [
             const SizedBox(height: 20),
             Text(
-              'Enter the 6-digit code sent to\n${auth.emailToVerify}',
+              'Enter the 6-digit code sent to\n${authState.emailToVerify ?? "your email"}',
               textAlign: TextAlign.center,
               style: theme.textTheme.bodyLarge,
             ),
@@ -54,10 +66,10 @@ class _VerificationScreenState extends ConsumerState<VerificationScreen> {
               ),
               onSubmitted: (_) => _verify(),
             ),
-            if (auth.error != null) ...[
+            if (authState.error != null) ...[
               const SizedBox(height: 16),
               Text(
-                auth.error!,
+                authState.error!,
                 style: const TextStyle(color: AppColors.error),
                 textAlign: TextAlign.center,
               ),
@@ -67,8 +79,8 @@ class _VerificationScreenState extends ConsumerState<VerificationScreen> {
               width: double.infinity,
               height: 50,
               child: ElevatedButton(
-                onPressed: auth.isLoading ? null : _verify,
-                child: auth.isLoading
+                onPressed: authState.isLoading ? null : _verify,
+                child: authState.isLoading
                     ? const CircularProgressIndicator()
                     : const Text('Verify'),
               ),
