@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		6hTgur9OjxUMgwenDviHO2a6k20=
+		fmepOFbbIKQeNwFf4erJeIN9NcY=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		tYfidWKwadA9u4IyHV0vXFSEGAU=
+		aWZFh+e4SF+Z13l+2thXaZG2ffQ=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES.Z</key>
 		<data>
-		7HaPmSbZ4WfMloLgUF8a3JV9tiY=
+		UXNSjhEWNisSgGaOVxfQV4cu1RU=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NativeAssetsManifest.json</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		mCe7iIjhSVWQJXFZexh3XSWt5mE=
+		JTOHLOO6O0YTtcnuLxRO7su/7Uc=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -220,6 +220,26 @@
 		<data>
 		W859JDVykxWZ0aYvnTEJCgiAYio=
 		</data>
+		<key>Frameworks/image_picker_ios.framework/Info.plist</key>
+		<data>
+		AHERNLm2G7cA7jXF0ckfOQkCId8=
+		</data>
+		<key>Frameworks/image_picker_ios.framework/_CodeSignature/CodeResources</key>
+		<data>
+		sqamkLjPijjL+QnIY0nPci2Zp1w=
+		</data>
+		<key>Frameworks/image_picker_ios.framework/image_picker_ios</key>
+		<data>
+		Y/AGvOLRV2fOl4g8rBrFMRuyERk=
+		</data>
+		<key>Frameworks/image_picker_ios.framework/image_picker_ios_privacy.bundle/Info.plist</key>
+		<data>
+		tDskubXtAkDkFBBcmL0pXZJqwII=
+		</data>
+		<key>Frameworks/image_picker_ios.framework/image_picker_ios_privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		/LX0ZlwxwIAIhjZaDB8EiH5KpXA=
+		</data>
 		<key>Frameworks/objective_c.framework/Info.plist</key>
 		<data>
 		NmRgi5QDo7jYvM4pVNN/ecIQTKI=
@@ -294,7 +314,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		GGIi7+DfzOLjkAmNdqWzm9BgZGI=
+		zrs9SxM6J5JRSA4ZJjdoHT92vD8=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -302,7 +322,7 @@
 		</data>
 		<key>Runner.debug.dylib</key>
 		<data>
-		85dHRfype1HSeS59qKKdzQ32UNw=
+		kzJdC2VuOmd1Gyxe2AhSbenzL+0=
 		</data>
 		<key>__preview.dylib</key>
 		<data>
@@ -385,7 +405,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bb3KgyVye2Cl8tyOye/kriqWz5S/AT+rclLCzcOyeas=
+			+p1n/dyIjpv+BQs1RpazW0aZsIKY8NajflPDz5KZoqk=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -399,7 +419,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RQQD896ks0o9+0GBEv3nVieSEnZQxotpGJvqyFJn0XI=
+			t/S0tsTdKNpGuM7w9tlg14lGTmVK1CC/ZqLlHFzB8fM=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
@@ -420,7 +440,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JqHvY6rBq+1dDmkFq/ywmgcggHTzScIjN3fgBIbkEwA=
+			R5fyx1OUT96dlCZn4fdyxBwPLRNEIXoHcksIVAMeahU=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/NativeAssetsManifest.json</key>
@@ -448,7 +468,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0bopwjY94NEmrQnKfzX36WecDh/dwzdbl6yQPIj86No=
+			SiuqbR0VzYByw5MdiYpjgCPRUKO+FQmdtb20UWmGJ/s=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -689,6 +709,41 @@
 			3wG/jzEbezUNAdVa/lBZ6tm6KwBpxUIeadm0BffKvqI=
 			</data>
 		</dict>
+		<key>Frameworks/image_picker_ios.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MaiCieyltj8XpuaGH0ihKDJ68TZuxpjk5jkPzU58wlk=
+			</data>
+		</dict>
+		<key>Frameworks/image_picker_ios.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3OWgH3JZMmrHe7qjZT9XZ4PFCgRGKtUBHRzwnO2EaaI=
+			</data>
+		</dict>
+		<key>Frameworks/image_picker_ios.framework/image_picker_ios</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6YjIq8VsR2uVNlt6pXc362wkn59UZhUWGc5Vs/uQXrs=
+			</data>
+		</dict>
+		<key>Frameworks/image_picker_ios.framework/image_picker_ios_privacy.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			51OgFtNARP2loXMhx7jAxLV8HFBmFsPgU4NDwnE6Zbo=
+			</data>
+		</dict>
+		<key>Frameworks/image_picker_ios.framework/image_picker_ios_privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bS2g2NkwIn1CjB2TY7CtbjoS4sm2jFzilxWKdBL8jDE=
+			</data>
+		</dict>
 		<key>Frameworks/objective_c.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
@@ -819,7 +874,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			q78r/iPppkQskbzpBF0JvVc43xVfPbNLB54ZHAz35uE=
+			4QTif1oiYJ850ZNLP/DcvRLAwzveXH9OHK/VR/dyjuM=
 			</data>
 		</dict>
 		<key>__preview.dylib</key>

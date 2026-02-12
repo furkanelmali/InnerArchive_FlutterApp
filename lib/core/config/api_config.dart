@@ -9,13 +9,13 @@ abstract final class ApiConfig {
   static const openLibraryCoverBase = 'https://covers.openlibrary.org/b/id';
 
   static const rawgApiKey = '6cc7d749b7734f10a4a53538fb2bc887';
-  static const rawgBaseUrl = 'https://api.rawg.io/api';
+  static const rawgBaseUrl = 'https://api.rawg.io/api'; 
 
   // Supabase
-  static const supabaseUrl = 'YOUR_SUPABASE_URL';
-  static const supabaseAnonKey = 'YOUR_SUPABASE_ANON_KEY';
+  static const supabaseUrl = 'https://uhwxediwwieojkvktlfo.supabase.co';
+  static const supabaseAnonKey = 'sb_publishable_mhXNUQdFJjmqCn-c83uXJw_LHRCgtBn';
 
   // AI
-  static const geminiApiKey = 'YOUR_GEMINI_API_KEY';
+  static const geminiApiKey = 'AIzaSyBVIrUGFgnfjBwlYPQw1F_TiUMOELZJikk';
   static const geminiBaseUrl = 'https://generativelanguage.googleapis.com/v1beta';
 }

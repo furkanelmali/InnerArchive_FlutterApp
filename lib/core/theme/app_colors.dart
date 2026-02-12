@@ -19,4 +19,7 @@ abstract final class AppColors {
   static const Color border = Color(0xFF2A2E3B);
   static const Color divider = Color(0xFF1E2230);
   static const Color error = Color(0xFFEF4444);
+  static const Color success = Color(0xFF22C55E);
+  static const Color warning = Color(0xFFF59E0B);
+  static const Color accent = Color(0xFF06B6D4);
 }

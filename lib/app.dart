@@ -4,7 +4,10 @@ import 'core/theme/app_theme.dart';
 import 'core/theme/app_colors.dart';
 import 'features/auth/providers/auth_provider.dart';
 import 'features/auth/screens/auth_screen.dart';
-import 'features/media/screens/home_screen.dart';
+import 'features/auth/screens/verification_screen.dart';
+import 'features/auth/screens/profile_setup_screen.dart';
+import 'features/discovery/screens/discovery_home_screen.dart';
+import 'features/discovery/screens/explore_screen.dart';
 import 'features/media/screens/statistics_screen.dart';
 import 'features/media/screens/profile_screen.dart';
 
@@ -36,6 +39,10 @@ class AuthGate extends ConsumerWidget {
         );
       case AuthStatus.unauthenticated:
         return const AuthScreen();
+      case AuthStatus.verificationRequired:
+        return const VerificationScreen();
+      case AuthStatus.profileSetupRequired:
+        return const ProfileSetupScreen();
       case AuthStatus.authenticated:
         return const AppShell();
     }
@@ -58,7 +65,8 @@ class _AppShellState extends State<AppShell> {
       body: IndexedStack(
         index: _currentIndex,
         children: const [
-          HomeScreen(),
+          DiscoveryHomeScreen(),
+          ExploreScreen(),
           StatisticsScreen(),
           ProfileScreen(),
         ],
@@ -73,9 +81,14 @@ class _AppShellState extends State<AppShell> {
         elevation: 0,
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.video_library_outlined),
-            activeIcon: Icon(Icons.video_library),
-            label: 'Library',
+            icon: Icon(Icons.explore_outlined),
+            activeIcon: Icon(Icons.explore),
+            label: 'Discover',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.auto_awesome_outlined),
+            activeIcon: Icon(Icons.auto_awesome),
+            label: 'For You',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.bar_chart_outlined),

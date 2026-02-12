@@ -27,6 +27,49 @@ class AuthService {
     await _client.auth.signOut();
   }
 
+  Future<AuthResponse> verifyEmailOtp({
+    required String email,
+    required String token,
+  }) async {
+    return _client.auth.verifyOTP(
+      token: token,
+      type: OtpType.signup,
+      email: email,
+    );
+  }
+
+  Future<void> createProfile({
+    required String userId,
+    required String username,
+    required String fullName,
+    required DateTime? birthDate,
+  }) async {
+    await _client.from('profiles').insert({
+      'id': userId,
+      'username': username,
+      'full_name': fullName,
+      'birth_date': birthDate?.toIso8601String(),
+      'updated_at': DateTime.now().toIso8601String(),
+    });
+  }
+
+  Future<Map<String, dynamic>?> getProfile(String userId) async {
+    try {
+      final response = await _client
+          .from('profiles')
+          .select()
+          .eq('id', userId)
+          .maybeSingle();
+      return response;
+    } catch (_) {
+      return null;
+    }
+  }
+
+  Future<void> resendOtp(String email) async {
+    await _client.auth.resend(type: OtpType.signup, email: email);
+  }
+
   Future<void> resetPassword(String email) async {
     await _client.auth.resetPasswordForEmail(email);
   }

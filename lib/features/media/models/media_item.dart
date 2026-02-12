@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import '../../../core/enums/media_type.dart';
 import '../../../core/enums/media_status.dart';
+import '../../../core/enums/anime_format.dart';
 
 @immutable
 class MediaItem {
@@ -14,6 +15,8 @@ class MediaItem {
   final MediaStatus status;
   final int? rating;
   final String? note;
+  final String? source; // tmdb, jikan, openlibrary, rawg, manual
+  final AnimeFormat? animeFormat;
   final DateTime createdAt;
   final DateTime updatedAt;
 
@@ -28,9 +31,18 @@ class MediaItem {
     this.status = MediaStatus.watchlist,
     this.rating,
     this.note,
+    this.source,
+    this.animeFormat,
     required this.createdAt,
     required this.updatedAt,
-  });
+  })  : assert(
+          type != MediaType.anime || source == null || source == 'jikan',
+          'Anime items must originate from Jikan',
+        ),
+        assert(
+          type != MediaType.game || source == null || source == 'rawg',
+          'Game items must originate from RAWG',
+        );
 
   MediaItem copyWith({
     String? title,
@@ -42,6 +54,8 @@ class MediaItem {
     MediaStatus? status,
     int? rating,
     String? note,
+    String? source,
+    AnimeFormat? animeFormat,
     DateTime? updatedAt,
   }) {
     return MediaItem(
@@ -55,6 +69,8 @@ class MediaItem {
       status: status ?? this.status,
       rating: rating ?? this.rating,
       note: note ?? this.note,
+      source: source ?? this.source,
+      animeFormat: animeFormat ?? this.animeFormat,
       createdAt: createdAt,
       updatedAt: updatedAt ?? this.updatedAt,
     );
@@ -72,6 +88,8 @@ class MediaItem {
       'status': status.name,
       'rating': rating,
       'note': note,
+      'source': source,
+      'animeFormat': animeFormat?.name,
       'createdAt': createdAt.toIso8601String(),
       'updatedAt': updatedAt.toIso8601String(),
     };
@@ -91,6 +109,10 @@ class MediaItem {
       status: MediaStatus.values.byName(json['status'] as String),
       rating: json['rating'] as int?,
       note: json['note'] as String?,
+      source: json['source'] as String?,
+      animeFormat: json['animeFormat'] != null
+          ? AnimeFormat.values.byName(json['animeFormat'] as String)
+          : null,
       createdAt: DateTime.parse(json['createdAt'] as String),
       updatedAt: DateTime.parse(json['updatedAt'] as String),
     );

@@ -2,6 +2,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import '../../../core/services/supabase_client.dart';
 import '../../../core/enums/media_type.dart';
 import '../../../core/enums/media_status.dart';
+import '../../../core/enums/anime_format.dart';
 import '../models/media_item.dart';
 
 class RemoteDataSource {
@@ -17,7 +18,9 @@ class RemoteDataSource {
         .eq('user_id', _userId!)
         .order('updated_at', ascending: false);
 
-    return (response as List).map(_fromRow).toList();
+    return (response as List)
+        .map((r) => rowToMediaItem(r as Map<String, dynamic>))
+        .toList();
   }
 
   Future<void> upsert(MediaItem item) async {
@@ -53,13 +56,14 @@ class RemoteDataSource {
       'status': item.status.name,
       'rating': item.rating,
       'note': item.note,
+      'source': item.source,
+      'anime_format': item.animeFormat?.name,
       'created_at': item.createdAt.toIso8601String(),
       'updated_at': item.updatedAt.toIso8601String(),
     };
   }
 
-  MediaItem _fromRow(dynamic row) {
-    final map = row as Map<String, dynamic>;
+  static MediaItem rowToMediaItem(Map<String, dynamic> map) {
     return MediaItem(
       id: map['id'] as String,
       externalId: map['external_id'] as String?,
@@ -73,6 +77,10 @@ class RemoteDataSource {
       status: MediaStatus.values.byName(map['status'] as String),
       rating: map['rating'] as int?,
       note: map['note'] as String?,
+      source: map['source'] as String?,
+      animeFormat: map['anime_format'] != null
+          ? AnimeFormat.values.byName(map['anime_format'] as String)
+          : null,
       createdAt: DateTime.parse(map['created_at'] as String),
       updatedAt: DateTime.parse(map['updated_at'] as String),
     );

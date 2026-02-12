@@ -8,12 +8,14 @@ class MediaCard extends StatelessWidget {
   final MediaItem item;
   final VoidCallback onTap;
   final VoidCallback? onDismissed;
+  final VoidCallback? onLongPress;
 
   const MediaCard({
     super.key,
     required this.item,
     required this.onTap,
     this.onDismissed,
+    this.onLongPress,
   });
 
   @override
@@ -35,6 +37,7 @@ class MediaCard extends StatelessWidget {
       ),
       child: GestureDetector(
         onTap: onTap,
+        onLongPress: onLongPress,
         child: Container(
           width: double.infinity,
           padding: const EdgeInsets.all(14),
@@ -50,15 +53,18 @@ class MediaCard extends StatelessWidget {
                 child: SizedBox(
                   width: 52,
                   height: 74,
-                  child: item.imageUrl != null
-                      ? CachedNetworkImage(
-                          imageUrl: item.imageUrl!,
-                          fit: BoxFit.cover,
-                          placeholder: (_, _) =>
-                              Container(color: AppColors.surfaceLight),
-                          errorWidget: (_, _, _) => _posterFallback(),
-                        )
-                      : _posterFallback(),
+                  child: Hero(
+                    tag: 'poster_${item.id}',
+                    child: item.imageUrl != null
+                        ? CachedNetworkImage(
+                            imageUrl: item.imageUrl!,
+                            fit: BoxFit.cover,
+                            placeholder: (_, _) =>
+                                Container(color: AppColors.surfaceLight),
+                            errorWidget: (_, _, _) => _posterFallback(),
+                          )
+                        : _posterFallback(),
+                  ),
                 ),
               ),
               const SizedBox(width: 14),
